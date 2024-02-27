@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="div">
+    <h3> წაშლილები</h3>
+<div class="row">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">აღწერა</th>
+            <th scope="col">შექმნის დრო</th>
+            <th scope="col">წაშლის დრო</th>
+            <th scope="col">შესრულებულია</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let todo of todos"> 
+            <th [class.stroke]="todo.isCompleted">{{todo.description}}</th>
+            <td>{{todo.createdDate | date: 'MM/dd/yyyy hh:mm a' | json}}</td>
+            <td>{{todo.deletedDate | date: 'MM/dd/yyyy hh:mm a'}}</td>
+            <td> {{todo.isCompleted}}</td>
+            <td><button class="button1" type="button" (click)="undoDeleteTodo(todo.id, todo)">Undo</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+</div>

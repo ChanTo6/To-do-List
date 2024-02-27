@@ -1,0 +1,57 @@
+.container
+{
+    height: 80%;
+    width: 90%;
+    
+}
+.completed {
+    text-decoration: line-through;
+  }
+  
+.delete{
+    background-color: pink;
+    border-radius: 25px;
+    width: 60%;
+    height: 40px;
+}
+.fa-pencil {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .edit{
+    border-radius: 25px;
+  }
+  /* Save Button */
+.btn-save {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-save:hover {
+  background-color: #218838;
+}
+
+/* Cancel Button */
+.btn-cancel {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #c82333;
+}
